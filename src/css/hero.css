@@ -1,55 +1,8 @@
-/* Basic styles */
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: currentColor;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-button {
-  cursor: pointer;
-}
-
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 60px;
-  margin: 0 auto;
-}
-
 /* Hero section styles */
 .hero {
   overflow: hidden;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .hero-title {
