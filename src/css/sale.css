@@ -29,15 +29,15 @@
 }
 
 @media olny screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
+.container {
+max-width: 768px;
+}
 }
 
 @media olny screen and (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
-    }
+.container {
+max-width: 1200px;
+}
 }
 
 
@@ -56,7 +56,7 @@
 }
 
 .sale-item-smole {
-    background-image: url(../img/sale-img/rectangle3-min.jpg);
+    background-image: url(/img/sale-img/rectangle3-min.jpg);
     background-size: 100% 100%;
     height: 80px;
     position: relative;
@@ -64,7 +64,7 @@
 }
 
 .sale-image-big {
-    background-image: url(../img/sale-img/Rectangle\ 13-min.jpg);
+    background-image: url(/img/sale-img/Rectangle\ 13-min.jpg);
     background-size: 100% 100%;
     height: 385px;
     position: relative;
