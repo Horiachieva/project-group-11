@@ -300,4 +300,8 @@ body {
   .footer-list-anchor {
     gap: 40px;
   }
+
+  .footer-line {
+    width: 1136px;
+  }
 }
