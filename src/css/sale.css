@@ -21,39 +21,42 @@
 }
 
 
-.container {
-    min-width: 320px;
-    max-width: 375px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-@media olny screen and (min-width: 768px) {
-.container {
-max-width: 768px;
-}
-}
-
-@media olny screen and (min-width: 1200px) {
-.container {
-max-width: 1200px;
-}
-}
 
 
-.sale-subtitle {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 0.91667;
+
+.sale-subtitle{
+font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
     letter-spacing: -0.02em;
     color: #0c0c0c;
 }
+@media olny screen and (min-width: 768px) {
+.sale-subtitle {
+font-size: 48px;
+}
+}
+
+
+
+
 
 .sale-list {
     display: flex;
     align-items: column;
-    gap: 10px;
+    gap: 5px;
 }
+@media olny screen and (min-width: 768px) {
+.sale-list {
+        display: flex;
+        align-items: column;
+        gap: 10px;
+    }
+}
+
+
+
+
 
 .sale-item-smole {
     background-image: url(/img/sale-img/rectangle3-min.jpg);
@@ -62,6 +65,18 @@ max-width: 1200px;
     position: relative;
     width: 80px;
 }
+@media olny screen and (min-width: 768px) {
+.sale-item-smole {
+width: 132px;
+height: 132px;
+}
+}
+
+
+
+
+
+
 
 .sale-image-big {
     background-image: url(/img/sale-img/Rectangle\ 13-min.jpg);
@@ -70,50 +85,139 @@ max-width: 1200px;
     position: relative;
     width: 335px;
 }
+@media olny screen and (min-width: 768px) {
+.sale-image-big {
+width: 552px;
+    height: 558px;
+}
+}    
+
+@media olny screen and (min-width: 1200px) {
+
+.sale-image-big {
+width: 428px;
+height: 558px;
+}
+}
 
 .sale-edition-wrap-one{
-
+width: 279px;
+margin-bottom: 20px;
 }
 
 
 .sale-edition-subtitle {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 1.125;
+font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: -0.02em;
     color: #fbfbfb;
+    margin-bottom: 10px;
 }
+@media olny screen and (min-width: 768px) {
+.sale-edition-subtitle {
+font-size: 32px;
+line-height: 1.12;
+}
+}
+
+
+
+
+
+
+
 
 .sale-edition-subtitle-one {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.28571;
+    line-height: 1.28;
     letter-spacing: -0.02em;
     color: rgba(251, 251, 251, 0.5);
 }
-.sale-edition-wrap-two{
 
+
+
+
+
+
+
+.sale-edition-wrap-two{
+display: flex;
+margin-bottom: 30px;
+width: 530px;
 }
 
 
-.sale-edition-btn {}
+.sale-edition-btn {
+font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+width: 68px;
+height: 32px;
+margin-left: 9px;
+}
+@media olny screen and (min-width: 768px) {
+.sale-edition-btn {
+font-size: 20px;
+line-height: 1;
+width: 78px;
+height: 32px;
+}
+}
+
+
+
+
+
+
+
+
+
+
 
 .sale-micro-text {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.16;
     letter-spacing: -0.02em;
     text-decoration: line-through;
     color: rgba(251, 251, 251, 0.5);
 }
 
+
+
+
+
+
+
+
 .sale-advertisment-text {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
+    font-size: 14px;
+    line-height: 1.28;
     letter-spacing: -0.02em;
     color: rgba(251, 251, 251, 0.7);
+    width: 279px;
 }
+@media olny screen and (min-width: 768px) {
+.sale-advertisment-text {
+font-size: 16px;
+line-height: 1.25;
+width: 584px;
+}
+}
+@media olny screen and (min-width: 1200px) {
+.sale-advertisment-text {
+width: 410px;
+}
+}
+
+
+
+
 .sale-buttons-wrap{
 
 }
@@ -121,6 +225,7 @@ max-width: 1200px;
 .sale-edition-buttons-list{
 
 }
+
 .sale-edition-buttons-items{
 
 }
