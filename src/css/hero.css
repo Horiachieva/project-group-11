@@ -130,6 +130,10 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
+  .hero {
+    margin-bottom: 80px;
+  }
+
   .container {
     width: 768px;
     padding-left: 32px;
@@ -199,6 +203,10 @@
 
 /* Desktop */
 @media screen and (min-width: 1280px) {
+  .hero {
+    margin-bottom: 100px;
+  }
+
   .container {
     width: 1280px;
     padding-left: 65px;

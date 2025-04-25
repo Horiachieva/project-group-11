@@ -1,6 +1,6 @@
 .about-us .container {
   font-family: 'Gilroy', sans-serif;
-  width: 335px;
+  margin-bottom: 60px;
 }
 
 .about-us-subtitle-text-and-button {
@@ -54,7 +54,7 @@
 
 @media only screen and (min-width: 768px) {
   .about-us .container {
-    width: 704px;
+    margin-bottom: 80px;
   }
 
   .about-us-subtitle-text-and-button {
@@ -92,7 +92,7 @@
   .about-us .container {
     display: flex;
     gap: 40px;
-    width: 1150px;
+    margin-bottom: 100px;
   }
 
   .about-us-subtitle-text-and-button {
