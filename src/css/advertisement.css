@@ -32,8 +32,8 @@
   position: absolute;
   inset: 0;
   background-image: image-set(
-    url('./img/advertisement_images/image_703-min.jpg') 1x,
-    url('./img/advertisement_images/image_703@2x-min.jpg') 2x
+    url('/img/advertisement_images/image_703-min.jpg') 1x,
+    url('/img/advertisement_images/image_703@2x-min.jpg') 2x
   );
   background-size: cover;
   background-position: center;
@@ -80,6 +80,13 @@
   box-sizing: border-box;
 }
 
+.advertisement-btn:hover,
+.advertisement-btn:focus {
+  background-color: #fbfbfb;
+  color: black;
+  border-color: black;
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .advertisement_section {
@@ -89,8 +96,8 @@
 
   .container-advertisement::before {
     background-image: image-set(
-      url('./img/advertisement_images/image_702-min.jpg') 1x,
-      url('./img/advertisement_images/image_702@2x-min.jpg') 2x
+      url('/img/advertisement_images/image_702-min.jpg') 1x,
+      url('/img/advertisement_images/image_702@2x-min.jpg') 2x
     );
   }
 
@@ -119,8 +126,8 @@
 
   .container-advertisement::before {
     background-image: image-set(
-      url('./img/advertisement_images/image_701-min.jpg') 1x,
-      url('./img/advertisement_images/image_701@2x-min.jpg') 2x
+      url('/img/advertisement_images/image_701-min.jpg') 1x,
+      url('/img/advertisement_images/image_701@2x-min.jpg') 2x
     );
   }
 
