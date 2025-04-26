@@ -58,9 +58,9 @@
 
 /* Mobile */
 @media screen and (max-width: 767px) {
-  .container {
+  /* .container {
     max-width: 375px;
-  }
+  } */
 
   .hero-wrapper {
     margin-bottom: 28px; /* Гап 28px між hero-wrapper та hero-image */
@@ -109,11 +109,11 @@
 
 /* Mobile small */
 @media screen and (max-width: 374px) {
-  .container {
+  /* .container {
     max-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
-  }
+  } */
 
   .hero-title {
     font-size: 36px;
@@ -131,14 +131,15 @@
 /* Tablet */
 @media screen and (min-width: 768px) {
   .hero {
+    margin-top: 80px;
     margin-bottom: 80px;
   }
 
-  .container {
+  /* .container {
     width: 768px;
     padding-left: 32px;
     padding-right: 32px;
-  }
+  } */
 
   .hero-wrapper {
     display: flex;
@@ -205,12 +206,6 @@
 @media screen and (min-width: 1280px) {
   .hero {
     margin-bottom: 100px;
-  }
-
-  .container {
-    width: 1280px;
-    padding-left: 65px;
-    padding-right: 65px;
   }
 
   .hero-content {

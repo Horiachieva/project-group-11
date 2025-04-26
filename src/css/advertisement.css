@@ -1,8 +1,3 @@
-.container {
-  width: 335px;
-  margin: 0 auto;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -19,6 +14,7 @@
 .advertisement_section {
   max-width: 375px;
   padding: 60px 20px;
+  margin: 0 auto;
 }
 
 .container-advertisement {
@@ -54,7 +50,6 @@
 }
 
 .text-advertisement {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 1;
@@ -87,13 +82,9 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .container {
-    width: 704px;
-  }
-
   .advertisement_section {
-    max-width: 704px;
-    padding: 100px 65px;
+    max-width: 768px;
+    padding: 80px 32px;
   }
 
   .container-advertisement::before {
@@ -115,20 +106,14 @@
     font-size: 48px;
     line-height: 1.2;
     width: 576px;
-    height: 185px;
     margin-bottom: 32px;
   }
 }
 
 /* Desktop */
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 1158px;
-  }
-
   .advertisement_section {
-    max-width: 1150px;
-    height: 298px;
+    max-width: 1280px;
     padding: 80px 32px;
   }
 
