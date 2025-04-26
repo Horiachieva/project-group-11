@@ -1,183 +1,158 @@
-
-
-ul,
-ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-button {
-    cursor: pointer;
-}
-
 .container {
-    width: 335px;
-    margin: 0 auto;
+  width: 335px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .advertisement_section {
-    max-width: 375px;
-    padding: 60px 20px;
+  max-width: 375px;
+  padding: 60px 20px;
 }
 
 .container-advertisement {
-    position: relative;
-    border-radius: 30px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: #0C0C0C;
-    overflow: hidden;
-    z-index: 0;
+  position: relative;
+  border-radius: 30px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #0c0c0c;
+  overflow: hidden;
+  z-index: 0;
 }
 
 .container-advertisement::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: image-set(url("../img/advertisement_images/image_703-min.jpg") 1x,
-            url("../img/advertisement_images/image_703@2x-min.jpg") 2x);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.2;
-    z-index: -1;
-    transition: background-image 0.3s ease;
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: image-set(
+    url('../img/advertisement_images/image_703-min.jpg') 1x,
+    url('../img/advertisement_images/image_703@2x-min.jpg') 2x
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: -1;
+  transition: background-image 0.3s ease;
 }
 
 .advertisement-content {
-    display: block;
-    text-align: left;
-    padding: 60px 28px;
+  display: block;
+  text-align: left;
+  padding: 60px 28px;
 }
 
 .text-advertisement {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: #fbfbfb;
-    width: 279px;
-    text-align: left;
-    margin-bottom: 28px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  width: 279px;
+  text-align: left;
+  margin-bottom: 28px;
 }
 
 .text-advertisement .advertisement-span {
-    color: rgba(251, 251, 251, 0.5);
+  color: rgba(251, 251, 251, 0.5);
 }
 
 .advertisement-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 160px;
-    height: 48px;
-    border: 1px solid rgba(251, 251, 251, 0.15);
-    border-radius: 16px;
-    background: transparent;
-    color: #fbfbfb;
-    font: inherit;
-    text-decoration: none;
-    padding: 0;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 48px;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  background: transparent;
+  color: #fbfbfb;
+  font: inherit;
+  text-decoration: none;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-    .container {
-        width: 704px;
-    }
+  .container {
+    width: 704px;
+  }
 
-    .advertisement_section {
-        max-width: 704px;
-        padding: 100px 65px;
-    }
+  .advertisement_section {
+    max-width: 704px;
+    padding: 100px 65px;
+  }
 
-    .container-advertisement::before {
-        background-image: image-set(url("../img/advertisement_images/image_702-min.jpg") 1x,
-                url("../img/advertisement_images/image_702@2x-min.jpg") 2x);
-    }
+  .container-advertisement::before {
+    background-image: image-set(
+      url('../img/advertisement_images/image_702-min.jpg') 1x,
+      url('../img/advertisement_images/image_702@2x-min.jpg') 2x
+    );
+  }
 
-        .advertisement-content {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            padding: 80px 64px;
-            row-gap: 32px;
-        }
+  .advertisement-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 80px 64px;
+    row-gap: 32px;
+  }
 
-    .text-advertisement {
-        font-size: 48px;
-        line-height: 1.2;
-        width: 576px;
-        height: 185px;
-        margin-bottom: 32px;
-    }
-         
+  .text-advertisement {
+    font-size: 48px;
+    line-height: 1.2;
+    width: 576px;
+    height: 185px;
+    margin-bottom: 32px;
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: 1280px) {
-    .container {
-        width: 1158px;
-    }
+  .container {
+    width: 1158px;
+  }
 
-    .advertisement_section {
-        max-width: 1150px;
-        height: 298px;
-        padding: 80px 32px;
-    }
+  .advertisement_section {
+    max-width: 1150px;
+    height: 298px;
+    padding: 80px 32px;
+  }
 
-    .container-advertisement::before {
-        background-image: image-set(url("../img/advertisement_images/image_701-min.jpg") 1x,
-                url("../img/advertisement_images/image_701@2x-min.jpg") 2x);
-    }
+  .container-advertisement::before {
+    background-image: image-set(
+      url('../img/advertisement_images/image_701-min.jpg') 1x,
+      url('../img/advertisement_images/image_701@2x-min.jpg') 2x
+    );
+  }
 
-    .advertisement-content {
-        flex-direction: row;
-        row-gap: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 80px 80px 83px 80px;
-        position: relative;
-    }
+  .advertisement-content {
+    flex-direction: row;
+    row-gap: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 80px 83px 80px;
+    position: relative;
+  }
 
-    .text-advertisement {
-        width: 690px;
-        height: 132px;
-        padding-bottom: 24px;
-        margin: 0;
-    }
-
+  .text-advertisement {
+    width: 690px;
+    height: 132px;
+    padding-bottom: 24px;
+    margin: 0;
+  }
 }
