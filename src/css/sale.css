@@ -77,7 +77,7 @@
     height: 398px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .sale-wrap {
     flex-direction: row;
   }
@@ -190,7 +190,7 @@
     line-height: 1.28;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .sale-edition-wrap-one {
     max-width: 389px;
   }
