@@ -69,7 +69,10 @@
   padding: 15px 44px;
   background-color: #3350e9;
   border: none;
-  cursor: pointer;
+}
+
+.catalog-title {
+  margin-bottom: 24px;
 }
 
 /* Tablet */
@@ -124,12 +127,6 @@
   }
 
   .img-catalog {
-    /* min-width: 304px;
-    height: 312px; */
     min-width: 292px;
-  }
-
-  .catalog-title {
-    margin-bottom: 86px;
   }
 }
