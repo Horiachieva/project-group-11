@@ -201,31 +201,8 @@
   height: 3px;
   background-color: #ffffff;
   transform-origin: center;
-  fill: currentColor;
-  stroke: currentColor;
+  fill: #f4f4fd;
 }
-
-/* .menu-btn-icon::before,
-.menu-btn-icon::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 30px;
-  height: 2px;
-  background-color: #fffbfb;
-  transform-origin: center;
-} */
-
-.menu-btn-icon::before {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-/* Другу лінію крутимо на -45 градусів */
-.menu-btn-icon::after {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-
 .nav-menu {
   display: flex;
   align-items: center;
