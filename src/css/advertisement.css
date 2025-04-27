@@ -11,26 +11,32 @@
   overflow: hidden;
 }
 
-.advertisement_section {
+.vertisement_section {
+  position: relative;
+  overflow: hidden;
   max-width: 375px;
   padding: 60px 20px;
   margin: 0 auto;
 }
 
-.container-advertisement {
+.container-vertisement {
   position: relative;
   border-radius: 30px;
   width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   background-color: #0c0c0c;
   overflow: hidden;
   z-index: 0;
 }
 
-.container-advertisement::before {
+.container-vertisement::before {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: image-set(
     url('/img/advertisement_images/image_703-min.jpg') 1x,
     url('/img/advertisement_images/image_703@2x-min.jpg') 2x
@@ -43,28 +49,29 @@
   transition: background-image 0.3s ease;
 }
 
-.advertisement-content {
+.vertisement-content {
   display: block;
   text-align: left;
   padding: 60px 28px;
 }
 
-.text-advertisement {
+.text-vertisement {
   font-weight: 600;
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
-  width: 279px;
+  width: 100%;
+  /* width: 279px; */
   text-align: left;
   margin-bottom: 28px;
 }
 
-.text-advertisement .advertisement-span {
+.text-vertisement .vertisement-span {
   color: rgba(251, 251, 251, 0.5);
 }
 
-.advertisement-btn {
+.vertisement-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,10 +85,11 @@
   text-decoration: none;
   padding: 0;
   box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.advertisement-btn:hover,
-.advertisement-btn:focus {
+.vertisement-btn:hover,
+.vertisement-btn:focus {
   background-color: #fbfbfb;
   color: black;
   border-color: black;
@@ -89,27 +97,26 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .advertisement_section {
+  .vertisement_section {
     max-width: 768px;
     padding: 80px 32px;
   }
 
-  .container-advertisement::before {
+  .container-vertisement::before {
     background-image: image-set(
       url('/img/advertisement_images/image_702-min.jpg') 1x,
       url('/img/advertisement_images/image_702@2x-min.jpg') 2x
     );
   }
 
-  .advertisement-content {
+  .vertisement-content {
     display: flex;
     flex-direction: column;
     text-align: left;
     padding: 80px 64px;
-    row-gap: 32px;
   }
 
-  .text-advertisement {
+  .text-vertisement {
     font-size: 48px;
     line-height: 1.2;
     width: 576px;
@@ -119,19 +126,22 @@
 
 /* Desktop */
 @media screen and (min-width: 1280px) {
-  .advertisement_section {
-    max-width: 1280px;
-    padding: 80px 32px;
+  .vertisement_section {
+    max-width: 1150px;
+    padding: 80px 0;
   }
-
-  .container-advertisement::before {
+  .advertisement_section .container-advertisement {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+  .container-vertisement::before {
     background-image: image-set(
       url('/img/advertisement_images/image_701-min.jpg') 1x,
       url('/img/advertisement_images/image_701@2x-min.jpg') 2x
     );
   }
 
-  .advertisement-content {
+  .vertisement-content {
     flex-direction: row;
     row-gap: 0;
     display: flex;
@@ -141,10 +151,8 @@
     position: relative;
   }
 
-  .text-advertisement {
+  .text-vertisement {
     width: 690px;
-    height: 132px;
-    padding-bottom: 24px;
     margin: 0;
   }
 }

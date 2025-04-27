@@ -46,6 +46,25 @@
   width: 235px;
   height: 285px;
 }
+
+.sale-edition-wrap {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Додаємо медіа-запит для екранів до 340px */
+@media (max-width: 340px) {
+  .sale-edition-wrap {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .sale-edition-wrap h2,
+  .sale-edition-wrap p,
+  .sale-edition-wrap button {
+    font-size: 14px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .sale-title {
     font-size: 48px;
@@ -141,7 +160,7 @@
   line-height: 1.28;
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.7);
-  width: 279px;
+  max-width: 279px;
   margin-bottom: 28px;
 }
 .sale-specs-list {

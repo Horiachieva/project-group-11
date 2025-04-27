@@ -87,6 +87,7 @@
     text-align: center;
     color: #0c0c0c;
     padding: 26px 0;
+    display: block;
   }
 
   .nav-link {
@@ -105,7 +106,9 @@
     height: 0;
     background-color: blue;
     border-radius: 100%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      height 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .nav-link:hover::after {
@@ -122,11 +125,11 @@
     border-radius: 10px;
     width: 36px;
     height: 36px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .header-icon:hover,
-  .header-icon:focus {
+  .header-link-social:hover,
+  .header-link-social:focus {
     fill: #3350e9;
   }
 }
@@ -149,8 +152,7 @@
   top: 0;
   left: 0;
   position: fixed;
-  background-image: linear-gradient(rgba(12, 12, 12, 0.92)),
-    url('../src/img/menu.png');
+  background-image: url(../img/menu/menu-bg-min.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -166,8 +168,7 @@
 
 @media screen and (min-resolution: 2dppx) {
   .header-menu {
-    background-image: linear-gradient(rgba(12, 12, 12, 0.92)),
-      url('../img/header/menu-bg@2x-min.jpg');
+    background-image: url(../img/menu/menu-bg@2x-min.jpg);
   }
 }
 
@@ -181,7 +182,7 @@
   position: relative;
   display: block;
   margin-left: auto;
-  margin-bottom: 186px;
+  padding-bottom: 186px;
   top: 20px;
   right: 20px;
   width: 34px;
@@ -265,6 +266,17 @@
   height: 34px;
 }
 
+.social-link {
+  width: 100%;
+  height: 100%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: #fbfbfb;
+}
+
 .social-icon {
   fill: #f8f8f8;
 }
@@ -274,14 +286,12 @@
     padding-bottom: 50px;
     padding-top: 26px;
     padding-right: 32px;
-    background-image: linear-gradient(rgba(12, 12, 12, 0.92)),
-      url('./img/menu/menu-tab-min.jpg');
+    background-image: url(../img/menu/menu-tab-min.jpg);
   }
 
   @media screen and (min-resolution: 2dppx) {
     .header-menu {
-      background-image: linear-gradient(rgba(12, 12, 12, 0.92)),
-        url('./img/menu/menu-tab@2x-min.png');
+      background-image: url(../img/menu/menu-tab@2x-min.png);
     }
   }
 

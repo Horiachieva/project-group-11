@@ -38,13 +38,10 @@
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
   background-color: #f3f3f3;
-  height: 364px;
   box-sizing: border-box;
   border-top: none;
   text-align: left;
   width: 100%;
-  width: 335px;
-  height: 364px;
 }
 
 .price-catalog {
@@ -53,10 +50,6 @@
   line-height: 1.28;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.5);
-}
-
-.img-catalog {
-  min-width: 279px;
 }
 
 /* mobile-hidden default */

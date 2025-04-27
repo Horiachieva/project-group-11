@@ -19,7 +19,7 @@
 .footer-soc-list {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .footer-soc-item {
   width: 34px;
@@ -47,7 +47,7 @@
   fill: #f3f3f3;
 }
 
-.footer-tel {
+.footer-tel-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,7 +58,7 @@
   margin-bottom: 40px;
 }
 
-.footer-tel-link {
+.footer-tel {
   display: inline-block;
   font-weight: 500;
   font-size: 12px;
@@ -88,7 +88,7 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: #fbfbfb;
-  width: 279px;
+  max-width: 279px;
   margin-bottom: 92px;
 }
 
