@@ -1,11 +1,10 @@
 .sale-section {
   font-family: 'Gilroy';
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 .sale-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
 }
 .sale-title {
@@ -66,6 +65,9 @@
   }
 }
 @media only screen and (min-width: 768px) {
+  .sale-section {
+    padding-bottom: 80px;
+  }
   .sale-title {
     font-size: 48px;
     line-height: 0.91;
@@ -97,6 +99,9 @@
   }
 }
 @media only screen and (min-width: 1280px) {
+  .sale-section {
+    padding-bottom: 100px;
+  }
   .sale-wrap {
     flex-direction: row;
   }
@@ -160,7 +165,7 @@
   line-height: 1.28;
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.7);
-  max-width: 279px;
+  /* max-width: 279px; */
   margin-bottom: 28px;
 }
 .sale-specs-list {

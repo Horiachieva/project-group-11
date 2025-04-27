@@ -1,5 +1,5 @@
 .contact-us {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   letter-spacing: -0.02em;
 }
 
@@ -81,6 +81,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .contact-us {
+    padding-bottom: 80px;
+  }
+
   .contact-us-title {
     font-size: 48px;
     line-height: 0.91;
